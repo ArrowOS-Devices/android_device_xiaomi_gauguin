@@ -4,3 +4,6 @@ type firmware_file, file_type;
 type op1_file, file_type;
 type op2_file, file_type;
 type persist_file, file_type;
+
+# sysfs
+type sysfs_battery_supply, sysfs_type, fs_type;
