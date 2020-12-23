@@ -83,6 +83,12 @@ lib64/libmmrtpdecoder.so
 lib64/libmmrtpencoder.so
 lib64/libOmxMux.so
 
+# Perf
+product/lib64/vendor.qti.hardware.iop@2.0.so
+product/lib64/vendor.qti.hardware.perf@2.0.so
+product/lib/vendor.qti.hardware.iop@2.0.so
+product/lib/vendor.qti.hardware.perf@2.0.so
+
 # Telephony
 etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml
