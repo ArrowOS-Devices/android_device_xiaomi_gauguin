@@ -133,7 +133,8 @@ void load_dalvik_properties() {
 }
 
 void set_device_props(const std::string fingerprint, const std::string description,
-        const std::string brand, const std::string device, const std::string model) {
+        const std::string brand, const std::string device, const std::string model,
+        const std::string marketname) {
     const auto set_ro_build_prop = [](const std::string &source,
                                       const std::string &prop,
                                       const std::string &value) {
@@ -153,6 +154,7 @@ void set_device_props(const std::string fingerprint, const std::string descripti
         set_ro_product_prop(source, "brand", brand);
         set_ro_product_prop(source, "device", device);
         set_ro_product_prop(source, "model", model);
+        set_ro_product_prop(source, "marketname", marketname);
     }
 
     property_override("ro.build.fingerprint", fingerprint.c_str());
@@ -177,17 +179,17 @@ void vendor_load_properties() {
         set_device_props(
             fp,
             fp_desc,
-            "Xiaomi", "gauguininpro", "M2007J17I");
+            "Xiaomi", "gauguininpro", "M2007J17I", "Mi 10i");
     } else if (region == "GLOBAL") {
         set_device_props(
             fp,
             fp_desc,
-            "Xiaomi", "gauguin", "M2007J17G");
+            "Xiaomi", "gauguin", "M2007J17G", "Mi 10T Lite");
     } else if (region == "CN") {
         set_device_props(
             fp,
             fp_desc,
-            "Redmi", "gauguinpro", "M2007J17C");
+            "Redmi", "gauguinpro", "M2007J17C", "Redmi Note 9 Pro");
     }
 
     load_dalvik_properties();
