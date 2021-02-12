@@ -67,9 +67,6 @@ TARGET_USES_HWC2 := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# DT2W
-TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
-
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_gauguin
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
