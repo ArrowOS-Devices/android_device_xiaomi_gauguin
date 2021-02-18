@@ -165,6 +165,10 @@ PRODUCT_BOOT_JARS += \
     telephony-ext \
     android.hidl.manager-V1.0-java
 
+# TextClassifier
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
+
 # WFD
 PRODUCT_PACKAGES += \
     libaacwrapper \
