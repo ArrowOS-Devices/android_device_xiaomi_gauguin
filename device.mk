@@ -139,7 +139,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.gauguin
+    android.hardware.power-service-qti
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
