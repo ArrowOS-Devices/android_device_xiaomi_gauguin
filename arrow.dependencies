@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_vendor_xiaomi_gauguin",
+    "target_path": "vendor/xiaomi/gauguin"
+  },
+  {
+    "repository": "android_packages_apps_GCamGOPrebuilt",
+    "target_path": "packages/apps/GCamGOPrebuilt"
+  }
+]
