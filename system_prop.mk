@@ -31,3 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Netflix custom property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q8250-19134-1
+    
+# Block update
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.block_updater=true
